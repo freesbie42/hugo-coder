@@ -6,12 +6,6 @@
     {{ end }}
     {{ now.Year }}
     {{ with .Site.Params.author }} {{ . }} {{ end }}
-    - 
-    {{ range .Site.Menus.footer }}
-      <a href="{{ .URL }}">{{ .Name }}</a>
-    {{ end }}
-    {{ if (and .Site.Params.license) }}
-      {{ i18n "licensed_under" }} {{ .Site.Params.license | safeHTML }}
-    {{ end }}
+ - <a href="/pages/datenschutz/">Datenschutz</a> - <a href="/pages/impressum/">Impressum</a>
   </section>
 </footer>
